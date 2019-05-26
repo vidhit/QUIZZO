@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/new_login_gradients"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.examapp.Login">
+
+
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/actvity_main_Signin_btn"
+            android:layout_marginBottom="30dp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="Welcome to Skillio"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/textView" />
+
+
+
+
+        <Button
+            android:id="@+id/actvity_main_Signin_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:layout_below="@id/activity_main_pwd_edt"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:textSize="20dp"
+            android:text="Sign in" />
+
+
+
+
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rootsignup"
+        android:layout_below="@+id/rootsignin">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="Forgot Password" />
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgot"
+            android:layout_below="@+id/rootsignup">
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Sign Up"
+            android:textAlignment="center" />
+        </RelativeLayout>-->
+    <RelativeLayout
+        android:id="@+id/rootemm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rootskill"
+        android:layout_marginTop="100dp">
+
+        <EditText
+            android:id="@+id/activity_main_email_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_person_white_24dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rootbike"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/rootskill">
+
+       <!-- <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView4"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logooo"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            tools:ignore="VectorDrawableCompat" />-->
+
+    </RelativeLayout>
+
+
+   <!-- <android.support.design.widget.TextInputLayout
+        android:id="@+id/p"
+        android:layout_below="@id/rootemm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Password"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="@color/black">-->
+
+
+        <EditText
+            android:id="@+id/activity_main_pwd_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:textSize="30sp"
+            android:paddingLeft="5dp"
+            android:hint="Password"
+            android:layout_below="@id/rootemm"
+            android:layout_marginTop="12dp"
+            android:drawableLeft="@drawable/ic_lock_white_24dp"
+            android:textColorHint="@color/black"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:background="@null"
+            android:textColor="@color/black"
+            />
+
+
+
+
+
+
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_margin="16dp" />-->
+
+
+
+
+        <TextView
+            android:id="@+id/fp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:textSize="20dp"
+            android:layout_below="@id/activity_main_pwd_edt"
+            android:textColor="@color/black"
+            android:paddingRight="20dp"
+            android:layout_alignParentRight="true"
+            />
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EXAM App</string>
+    <string name="Facebook_app_id">201910517204733</string>
+    <string name="fb_login_protocol_scheme">fb201910517204733</string>
+</resources>
